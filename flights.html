@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flights - Japanese Travel Booking</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+    /* Additional CSS for language switch */
+    .language-switch {
+        float: right;
+    }
+
+    .language-switch select {
+        padding: 8px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>Japanese Travel Booking</h1>
+        <!-- Language switch -->
+        <div class="language-switch">
+            <select onchange="changeLanguage()">
+                <option value="en">English</option>
+                <option value="jp">Japanese</option>
+            </select>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hotels.html">Hotels</a></li>
+                <li><a href="flights.html">Flights</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="cab.html">Cab</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About/Book</a></li>
+            </ul>
+        </nav>        
+    </div>
+</header>
+<section class="hero">
+    <div class="container">
+        <h2>Find Your Perfect Flight</h2>
+        <p>Discover the best flight options for your trip to Japan.</p>
+    </div>
+</section>
+<section class="listing">
+    <div class="container">
+        <h3>Available Flights</h3>
+        <div class="listing-grid">
+            <div class="listing-item">
+                <h4>Tokyo to Osaka</h4>
+                <p>Flight from Tokyo Haneda Airport to Osaka Itami Airport</p>
+                <p>Departure: 10:00 AM - Arrival: 11:30 AM</p>
+                <p>Airlines: Japan Airlines</p>
+                <p>Price: $150 (¥15,000)</p>
+                <a href="book.html" class="btn red-btn">Book Now</a>
+            </div>
+            <div class="listing-item">
+                <h4>Osaka to Sapporo</h4>
+                <p>Flight from Osaka Kansai International Airport to Sapporo New Chitose Airport</p>
+                <p>Departure: 12:00 PM - Arrival: 2:00 PM</p>
+                <p>Airlines: All Nippon Airways</p>
+                <p>Price: $200 (¥20,000)</p>
+                <a href="book.html" class="btn red-btn">Book Now</a>
+            </div>
+            <div class="listing-item">
+                <h4>Nagoya to Fukuoka</h4>
+                <p>Flight from Nagoya Chubu Centrair International Airport to Fukuoka Airport</p>
+                <p>Departure: 9:30 AM - Arrival: 11:30 AM</p>
+                <p>Airlines: Peach Aviation</p>
+                <p>Price: $120 (¥12,000)</p>
+                <a href="book.html" class="btn red-btn">Book Now</a>
+            </div>
+            <div class="listing-item">
+                <h4>Sapporo to Okinawa</h4>
+                <p>Flight from Sapporo New Chitose Airport to Okinawa Naha Airport</p>
+                <p>Departure: 3:00 PM - Arrival: 5:00 PM</p>
+                <p>Airlines: Jetstar Japan</p>
+                <p>Price: $180 (¥18,000)</p>
+                <a href="book.html" class="btn red-btn">Book Now</a>
+            </div>
+            <div class="listing-item">
+                <h4>Tokyo to Hiroshima</h4>
+                <p>Flight from Tokyo Haneda Airport to Hiroshima Airport</p>
+                <p>Departure: 11:30 AM - Arrival: 1:30 PM</p>
+                <p>Airlines: All Nippon Airways</p>
+                <p>Price: $170 (¥17,000)</p>
+                <a href="book.html" class="btn red-btn">Book Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Japanese Travel Booking. All rights reserved.</p>
+    </div>
+</footer>
+<!-- Script for language switch -->
+<script>
+    function changeLanguage() {
+        var language = document.querySelector('.language-switch select').value;
+        var url = window.location.href.split('?')[0] + '?lang=' + language;
+        window.location.href = url;
+    }
+</script>
+</body>
+</html>

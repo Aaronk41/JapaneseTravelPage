@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Trip - Japanese Travel Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>Japanese Travel Booking</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hotels.html">Hotels</a></li>
+                <li><a href="flights.html">Flights</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="cab.html">Cab</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About/Book</a></li>
+            </ul>
+        </nav>
+        
+    </div>
+</header>
+<section class="book">
+    <div class="container">
+        <h2>Book Your Trip</h2>
+        <form>
+            <label for="destination">Destination</label>
+            <input type="text" id="destination" name="destination" required>
+            <label for="checkin">Check-in Date</label>
+            <input type="date" id="checkin" name="checkin" required>
+            <label for="checkout">Check-out Date</label>
+            <input type="date" id="checkout" name="checkout" required>
+            <label for="guests">Number of Guests</label>
+            <input type="number" id="guests" name="guests" required>
+            <button type="submit" class="btn red-btn">Book Now</button>
+        </form>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Japanese Travel Booking. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
